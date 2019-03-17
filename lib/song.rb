@@ -52,7 +52,6 @@ class Song
   def self.new_from_filename(file_name)
     file_name_array = file_name.sub(/\.mp3/,"").split(" - ")
     new_song = Song.new
-    @@all << new_song
     new_song.name = file_name_array[1]
     new_song.artist_name = file_name_array[0]
   end 

@@ -53,7 +53,7 @@ class Song
     file_name_array = file_name.sub(/\.mp3/,"").split(" - ")
     new_song = Song.new
     new_song.name = file_name_array[1].join("")
-    new_song.artist_name = file_name_array[0]
+    new_song.artist_name = file_name_array[0].join("")
   end 
 
 end
